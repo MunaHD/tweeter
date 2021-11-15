@@ -4,11 +4,20 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+   
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,11 +28,38 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="navbar-top">
       <span>tweeter</span>
-    </nav>
+      <div class="navbar-top-right"> 
+        <p><strong>Write</strong> a new tweet</p>
+        <i class="fas fa-angle-double-down" ></i>
 
+      </div>
+      
+    </nav>
+    <header class="under-navbar image">
+      <div class="header-avatar">
+          <img src="/images/profile-hex.png" > 
+      </div>
+      <div>
+          <h2>Your Name</h2>
+      </div>
+    </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+
+      <p>a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet 
+        a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet a new tweet 
+      </p>
+    
+
+    </main>
   </body>
 </html>
