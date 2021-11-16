@@ -1,24 +1,25 @@
 .under-navbar{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  height: 400px;
+  height: 520px;
   width: 100%;
   background-color: #CEB8A6;
-  padding-top: 100px;
   color:#ffffff;
   background-image: url(../images/rough-cloth.png);
 }
 
 
 
-.header-avatar img {
+
+/*
+ .header-avatar img {
   display: flex;
   justify-content: center;
   padding-top: 25px;
-  width: 70%;
+  
   margin: auto;
   
 }
-
+ */

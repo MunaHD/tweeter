@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #545149
+  color: #545149;
 }
 
 
@@ -19,8 +19,9 @@
   width: 100%;
   border: none;
   border-bottom: 4px solid #545149;
-  font-size: 25px;
-  height: 50px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  height: 40px;
   overflow: none;
   resize: none;
   color: #545149;
@@ -37,3 +38,5 @@ textarea:focus {
   padding: 3px;
   font-size: 90%;
 }
+
+
