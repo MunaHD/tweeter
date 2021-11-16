@@ -1,0 +1,39 @@
+
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #545149
+}
+
+
+.form-div {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee, sans-serif;
+}
+
+
+#tweet-text {
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid #545149;
+  font-size: 25px;
+  height: 50px;
+  overflow: none;
+  resize: none;
+  color: #545149;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.blue-button {
+  background-color: #4056A1;
+  color: #ffffff;
+  border:none; 
+  padding: 3px;
+  font-size: 90%;
+}

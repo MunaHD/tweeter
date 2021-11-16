@@ -4,10 +4,10 @@
   align-items: center;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
+  background-color: #B5C3CB;
   color: #FFFFFF;
   padding: 0 1.5em;
-  position:fixed;  /* change to fixed   */
+  position:fixed;  /* change to fixed  */
 }
 
 .navbar-top span {

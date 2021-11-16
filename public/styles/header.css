@@ -5,20 +5,20 @@
   align-items: center;
   height: 400px;
   width: 100%;
-  background-color: #e8ceb0;
+  background-color: #CEB8A6;
   padding-top: 100px;
-
-}
-.image {
+  color:#ffffff;
   background-image: url(../images/rough-cloth.png);
 }
 
 
+
 .header-avatar img {
   display: flex;
-  padding-top: 25px;
   justify-content: center;
-  max-width: 80%;
+  padding-top: 25px;
+  width: 70%;
   margin: auto;
+  
 }
 

@@ -15,14 +15,13 @@ html {
  */
 
 body {
- 
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 main {
-  
   margin: auto;
   width: 90%;
   background-color: #f4f1ec;
