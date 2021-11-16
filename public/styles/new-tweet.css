@@ -40,3 +40,39 @@ textarea:focus {
 }
 
 
+.tweets {
+  border: 3px solid  #545149;
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+}
+
+.tweets:hover {
+  box-shadow: 5px 5px #B5C3CB;
+}
+.fas:hover {
+  color: #CEB8A6;
+}
+
+.tweets header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color:  #545149;
+}
+
+.tweets footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 0.6em;
+  color:  #545149;
+}
+
+
+.tweets .content {
+ width: 100%;
+ border-bottom: 2px solid  #545149;
+}
+
