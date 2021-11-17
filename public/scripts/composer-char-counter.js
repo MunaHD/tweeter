@@ -1,36 +1,6 @@
 
 
 
-const createTweet = (tweet) => {
-  const $tweet = 
-  `<article>
-
-    <header>
-     <div>
-
-     </div>
-     <div>
-
-     </div>
-    </header>
-
-    <div class="content">
-      
-    </div>
-
-    <footer>
-    <div>
-
-    </div>
-    <div>
-
-    </div>
-   </footer>
-
-    </article>
-  `
-}
-
 
 
 
