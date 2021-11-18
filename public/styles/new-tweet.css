@@ -1,4 +1,3 @@
-
 .new-tweet {
   display: none;
 }
@@ -12,7 +11,6 @@
   background-color: #d2646633;
   border: 2px solid #d264666e;
   border-radius: 4px;
-  
 }
 
 .form-div {
@@ -20,8 +18,6 @@
   justify-content: space-between;
   font-family: Bungee, sans-serif;
 }
-
-
 
 #tweet-text {
   background: transparent;
@@ -43,14 +39,13 @@ textarea:focus {
 .blue-button {
   background-color: #4056A1;
   color: #ffffff;
-  border:none; 
+  border: none;
   padding: 3px;
   font-size: 90%;
 }
 
-
 .tweets {
-  border: 3px solid  #545149;
+  border: 3px solid #545149;
   margin-top: 30px;
   width: 100%;
   padding: 20px;
@@ -59,16 +54,16 @@ textarea:focus {
 .tweets:hover {
   box-shadow: 8px 8px #B5C3CB;
 }
+
 .icon:hover {
   color: #CEB8A6;
 }
-
 
 .tweets header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color:  #545149;
+  color: #545149;
   margin-bottom: 70px;
 }
 
@@ -78,25 +73,22 @@ textarea:focus {
   justify-content: space-between;
   margin-top: 15px;
   font-size: 0.6em;
-  color:  #545149;
+  color: #545149;
 }
-
 
 .tweets .content {
- width: 90%;
- border-bottom: 2px solid  #545149;
+  width: 90%;
+  border-bottom: 2px solid #545149;
 }
 
-.tooLong{
+.tooLong {
   color: #D26466;
 }
-
 
 .scroll-btn {
   display: none;
   float: right;
   margin: 25px;
-  
 }
 
 .scroll-btn i {

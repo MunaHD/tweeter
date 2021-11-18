@@ -7,8 +7,8 @@
   background-color: #B5C3CB;
   color: #FFFFFF;
   padding: 0 1.5em;
-  position:fixed;
-  top: 0;   
+  position: fixed;
+  top: 0;
 }
 
 .navbar-top span {
@@ -23,12 +23,10 @@
 }
 
 .navbar-top-right i {
-  
   color: #ce4648;
-
 }
+
 .nav-button {
- 
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -37,28 +35,25 @@
   outline: none;
   color: white;
 }
+
 .nav-button:hover {
   cursor: pointer;
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .animate {
   animation: bounce 1s infinite;
 }
 
-
-@keyframes bounce{
-  
+@keyframes bounce {
   50% {
     transform: translateY(12px);
   }
-  
   100% {
-    
     transform: translateY(0px);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .navbar-top {
     background-color: transparent;
   }
