@@ -23,8 +23,8 @@
 }
 
 .navbar-top-right i {
-  cursor: pointer;
-  color: red;
+  
+  color: #ce4648;
 
 }
 .nav-button {
@@ -38,6 +38,7 @@
   color: white;
 }
 .nav-button:hover {
+  cursor: pointer;
   transform: scale(1.05)
 }
 

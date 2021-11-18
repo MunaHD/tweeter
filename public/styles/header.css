@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 520px;
+  height: 400px;
   width: 100%;
   background-color: #CEB8A6;
   color:#ffffff;
@@ -12,28 +12,32 @@
 
 
 
-
-/*
- .header-avatar img {
+.header-avatar img {
   display: flex;
   justify-content: center;
   padding-top: 25px;
-  
+  max-width: 70%;  
+  height: auto;  
   margin: auto;
-  
 }
- */
+
+.header-name h2{
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
 
  @media only screen and (min-width: 1024px) {
   
-  .under-navbar {
-    float: left;
-    margin: 200px 50px;
-    height: 50%;
-    width: 40%;
+  .under-navbar { 
+    justify-content: center;
+    max-width: 25%;
+    margin-top: 250px;
+    margin-left: 5%;
+    margin-right: 50px;
   }
-  
-  
-  
+
   
 }

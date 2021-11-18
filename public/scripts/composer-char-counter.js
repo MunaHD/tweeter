@@ -24,4 +24,24 @@ $(document).ready(function() {
 
   });
 
+  $(window).scroll (()=> {
+    const y = $(this).scrollTop();
+    if (y > 250) {
+      $(".navbar-top-right").fadeOut()
+      $('.scroll-btn').fadeIn();
+    } else {
+      $(".navbar-top-right").fadeIn()
+      $('.scroll-btn').fadeOut();
+    }
+  })
+  
+
+  $('.scroll-btn').click(() => {
+    $(window).scrollTop(0)
+    $(".new-tweet").slideToggle()
+    $(".new-tweet textarea").focus();
+
+  })
+
+
 });

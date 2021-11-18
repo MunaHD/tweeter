@@ -38,9 +38,9 @@ $(() => {
           <span>${timeago.format(tweetObj.created_at)}</span>
         </div>
         <div>
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
+          <i class="fas fa-flag icon"></i>
+          <i class="fas fa-retweet icon"></i>
+          <i class="fas fa-heart icon"></i>
         </div>
     </footer> 
   </article>`
@@ -119,7 +119,7 @@ $(() => {
 
   $(".nav-button").click(() => {
     $(".new-tweet textarea").focus()
-    $(".new-tweet").slideDown();
+    $(".new-tweet").slideToggle();
     });
   
   

@@ -22,6 +22,7 @@
 }
 
 
+
 #tweet-text {
   background: transparent;
   width: 100%;
@@ -58,9 +59,10 @@ textarea:focus {
 .tweets:hover {
   box-shadow: 8px 8px #B5C3CB;
 }
-.fas:hover {
+.icon:hover {
   color: #CEB8A6;
 }
+
 
 .tweets header {
   display: flex;
@@ -89,3 +91,26 @@ textarea:focus {
   color: #D26466;
 }
 
+
+.scroll-btn {
+  display: none;
+  float: right;
+  margin: 25px;
+  
+}
+
+.scroll-btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  position: fixed;
+  bottom: 10px;
+}
+
+.circle {
+  background: #D26466;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}

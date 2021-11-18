@@ -26,15 +26,29 @@ main {
   width: 90%;
   background-color: #f4f1ec;
 }
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- @media screen and (min-width: 1024px) {
 
-  main {
+ /* DESKTOP */
+ @media only screen and (min-width: 1024px) {
+  
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  main{
+
     width: 50%;
-    float: right;
-    padding: 200px 20px;
+    margin-top: 250px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
  }
+
+
+  
