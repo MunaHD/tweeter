@@ -7,7 +7,8 @@
   background-color: #B5C3CB;
   color: #FFFFFF;
   padding: 0 1.5em;
-  position:fixed;  
+  position:fixed;
+  top: 0;   
 }
 
 .navbar-top span {
@@ -22,6 +23,42 @@
 }
 
 .navbar-top-right i {
+  cursor: pointer;
   color: red;
-  transform: translateY(-20px);
+
+}
+.nav-button {
+ 
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+}
+.nav-button:hover {
+  transform: scale(1.05)
+}
+
+.animate {
+  animation: bounce 1s infinite;
+}
+
+
+@keyframes bounce{
+  
+  50% {
+    transform: translateY(12px);
+  }
+  
+  100% {
+    
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-top {
+    background-color: transparent;
+  }
 }
