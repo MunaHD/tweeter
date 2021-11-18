@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   $('.scroll-btn').click(() => {
     $(window).scrollTop(0)
-    $(".new-tweet").slideToggle()
+    $(".new-tweet").slideToggle("slow")
     $(".new-tweet textarea").focus();
 
   })

@@ -119,8 +119,8 @@ $(() => {
   
 
   $(".nav-button").click(() => {
-    $(".new-tweet textarea").focus()
-    $(".new-tweet").slideToggle();
+    $(".new-tweet").slideToggle("slow")
+    $(".new-tweet textarea").focus();
     });
   
   
