@@ -99,6 +99,7 @@ $(() => {
      .then(event)
      .then(() => {
       loadTweets();
+      $(".counter").val(140);
      })
 
 

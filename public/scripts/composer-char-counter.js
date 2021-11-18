@@ -13,16 +13,16 @@ $(document).ready(function() {
  
     let counter =  $(this).find('.counter');
     const maxCount = 140;
-    counter.text(maxCount - inputLength);
-
-
+    
     if (inputLength > maxCount) {
       counter.addClass('tooLong')
     } else {
       counter.removeClass('tooLong')
     }
 
+    counter.text(maxCount - inputLength);
   });
+
 
   $(window).scroll (()=> {
     const y = $(this).scrollTop();
