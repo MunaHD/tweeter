@@ -7,15 +7,16 @@
 
 
 $(() => {
- 
+  
+  //function that makes the input is only text 
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
+ 
+  //create new tweet with imported info
   const createTweetElement = (tweetObj) => {
-    // create variable
     const $tweet = `
     <article  class="tweets">
     <header>
@@ -47,6 +48,7 @@ $(() => {
     return $tweet;
   };
   
+  //render the tweets from the obj
   const renderTweets = function(tweets) {
   
     for (let tweet of tweets) {
@@ -56,13 +58,16 @@ $(() => {
   };
 
   
-   
+  //get the tweets from the page upon submition 
   $('#add-tweet').submit(function(event) {
+    //prevent the browser from refreshing
     event.preventDefault();
   
+    //variables to hold the value of the tweet and an error message
     let singleTweet = $('#tweet-text').val();
-    
     let errMessage = "";
+
+    //check if the message is too long and send error if true
     if (singleTweet.length > 140) {
       errMessage = "You have entered too many characters.";
       
@@ -73,10 +78,8 @@ $(() => {
             $(".err").slideUp("fast")
           }, 2000); 
         });
-
-      
-      
-      
+    
+    //check if the input is emoty and return error if true
     } else if (singleTweet.length === 0) {
       errMessage = " Your tweet does not have any content.";
       
@@ -90,7 +93,8 @@ $(() => {
       
     }
       
-
+    
+    //post the tweets to the page in real time
     $.ajax({
       method: 'post',
       url: '/tweets',
@@ -107,17 +111,19 @@ $(() => {
   
   });
   
+  //takes the tweets from the form and passes the data to the rendertweets function 
+  //and returns the tweets
   const loadTweets = function() {
     $.ajax('/tweets', {method: 'GET'}).then(function (data) {
        renderTweets(data);
-     })
-
-     
+     })   
   };
+
   loadTweets();
   
   
-
+  // navbar button when presed will toggle the form open and closed\
+  // and focus on the textarea so user can write
   $(".nav-button").click(() => {
     $(".new-tweet").slideToggle("slow")
     $(".new-tweet textarea").focus();
