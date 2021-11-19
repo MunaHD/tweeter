@@ -1,27 +1,45 @@
 .under-navbar {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+
   height: 400px;
   width: 100%;
   background-color: #CEB8A6;
   color: #ffffff;
+
 }
 
 .image {
   background-image: url(../images/rough-cloth.png);
 }
-
-.header-avatar img {
+.inside-header {
   display: flex;
-  justify-content: center;
-  padding-top: 25px;
-  max-width: 70%;
-  height: auto;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
 }
 
-.header-name h2 {
+.header-avatar{
+  transform: scale(0.9);
+  margin-top: 30%;
+
+}
+
+.header-name p {
+  width: 100%;
+  font-size: 30px;
   margin-top: 10px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+  .under-navbar {
+    min-width: 20%;
+    max-width: 30%;
+    height: 15%;
+    margin-top: 250px;
+    margin-left: 5%;
+    margin-right: 40px;
+  }
+
 }

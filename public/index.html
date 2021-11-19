@@ -45,15 +45,14 @@
       
     </nav>
     <header class="under-navbar side-navbar image ">
-      <div class="inside-header ">
-        <div class="header-avatar">
-          <img src="/images/profile-personal.png" > 
+      <div class="inside-header">
+        <div>
+          <img class="header-avatar  side-pic" src="/images/profile-personal.png" > 
         </div>
         <div class="header-name">
-            <h2 >Tweety Peep</h2>
+            <p><strong>Tweety</strong> Peep</p>
         </div>
-      </div>
-      
+      </div>  
     </header>
     <!-- Page-specific (main) content here -->
     
@@ -65,8 +64,8 @@
         </div>
         
         <form id="add-tweet" method="POST" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" ></textarea>
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="form-div">
             <button class="blue-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>

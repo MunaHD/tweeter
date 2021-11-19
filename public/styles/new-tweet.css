@@ -24,8 +24,10 @@
   width: 100%;
   border: none;
   border-bottom: 4px solid #545149;
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-size: 20px;
+  font-weight: bold;
   height: 40px;
   overflow: none;
   resize: none;
@@ -50,6 +52,7 @@ textarea:focus {
   width: 100%;
   padding: 20px;
 }
+
 
 .tweets:hover {
   box-shadow: 8px 8px #B5C3CB;
@@ -79,6 +82,7 @@ textarea:focus {
 .tweets .content {
   width: 90%;
   border-bottom: 2px solid #545149;
+  font-weight:bold;
 }
 
 .tooLong {

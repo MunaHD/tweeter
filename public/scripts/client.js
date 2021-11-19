@@ -8,7 +8,7 @@
 
 $(() => {
  
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
@@ -43,21 +43,21 @@ $(() => {
           <i class="fas fa-heart icon"></i>
         </div>
     </footer> 
-  </article>`
+  </article>`;
     return $tweet;
-  }
+  };
   
   const renderTweets = function(tweets) {
   
     for (let tweet of tweets) {
-      const newTweet = createTweetElement(tweet)
-      $('.tweets-container').prepend(newTweet); 
+      const newTweet = createTweetElement(tweet);
+      $('.tweets-container').prepend(newTweet);
     }
-  }
+  };
 
   
    
-  $('#add-tweet').submit(function (event) {
+  $('#add-tweet').submit(function(event) {
     event.preventDefault();
   
     let singleTweet = $('#tweet-text').val();
@@ -67,40 +67,40 @@ $(() => {
       errMessage = "You have entered too many characters.";
       
       return $(".err")
-      .text(errMessage)
-      .slideDown("fast", function () {
-      setTimeout(() => {
-        $(".err").slideUp("fast")
-      }, 2000 )
-      });
+        .text(errMessage)
+        .slideDown("fast", function() {
+          setTimeout(() => {
+            $(".err").slideUp("fast")
+          }, 2000); 
+        });
 
       
       
       
     } else if (singleTweet.length === 0) {
-     errMessage = " Your tweet does not have any content.";
-     
-     return $(".err")
-     .text(errMessage)
-     .slideDown("fast", function () {
-      setTimeout(() => {
-        $(".err").slideUp("fast")
-      }, 2000 )
-      });
+      errMessage = " Your tweet does not have any content.";
       
-    } 
+      return $(".err")
+        .text(errMessage)
+        .slideDown("fast", function () {
+          setTimeout(() => {
+            $(".err").slideUp("fast");
+          }, 2000);
+        });
+      
+    }
       
 
     $.ajax({
       method: 'post',
       url: '/tweets',
       data: $(this).serialize(),
-     })
-     .then(event)
-     .then(() => {
-      loadTweets();
-      $(".counter").val(140);
-     })
+    })
+      .then(event)
+      .then(() => {
+        loadTweets();
+        $(".counter").val(140);
+      })
 
 
      this.reset();

@@ -31,7 +31,7 @@ main {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body {
     display: flex;
     flex-direction: row;
@@ -40,20 +40,12 @@ main {
 
   main {
     width: 50%;
-    margin-top: 250px;
+    margin-top: 220px;
     margin-right: 50px;
     margin-left: 50px;
   }
 
-  .under-navbar {
-    justify-content: center;
-    align-items: center;
-    min-width: 20%;
-    max-width: 25%;
-    margin-top: 250px;
-    margin-left: 5%;
-    margin-right: 50px;
-  }
+  
 }
 
 
