@@ -12,6 +12,18 @@ This app I dependent on HTML, CSS, JS, jQuery and AJAX  for the front-end and No
 - scrolling down the page enables the "scroll to top" button to quickly get back to the top of the page
 - when scrolled down the navbar button is hidden to not obscure tweets
 
+## Final Product
+
+!["desktop display of page with hidden form"](https://github.com/MunaHD/tinyapp/blob/master/docs/urls-page.png?raw=true)
+
+!["Mobile display of page with hidden form"]()
+
+!["Error message with form on page"]()
+
+!["single tweet with hover animation of icons"]()
+
+!["page with scroll down button"]()
+
 
 ## Getting Started
 1. Fork and clone this repository.
@@ -25,3 +37,4 @@ This app I dependent on HTML, CSS, JS, jQuery and AJAX  for the front-end and No
 
 - Express
 - Node 5.10.x or above
+
