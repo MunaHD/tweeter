@@ -50,7 +50,8 @@ $(() => {
   
   //render the tweets from the obj
   const renderTweets = function(tweets) {
-  
+    
+    $('.tweets-container').empty();
     for (let tweet of tweets) {
       const newTweet = createTweetElement(tweet);
       $('.tweets-container').prepend(newTweet);
@@ -101,8 +102,9 @@ $(() => {
       data: $(this).serialize(),
     })
       .then(event)
-      .then(() => {
+      .then((tweets) => {
         loadTweets();
+        
         $(".counter").val(140);
       })
 
@@ -114,7 +116,9 @@ $(() => {
   //takes the tweets from the form and passes the data to the rendertweets function 
   //and returns the tweets
   const loadTweets = function() {
+    //console.log("load tweets")
     $.ajax('/tweets', {method: 'GET'}).then(function (data) {
+       console.log("data", data)
        renderTweets(data);
      })   
   };
