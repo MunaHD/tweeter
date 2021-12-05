@@ -17,26 +17,29 @@ $(() => {
  
   //create new tweet with imported info
   const createTweetElement = (tweetObj) => {
+    const { avatars, name, handle, } = tweetObj.user
+    const { created_at } = tweetObj
+    const { text } = tweetObj.content
     const $tweet = `
     <article  class="tweets">
     <header>
       <div>
-        <img src="${tweetObj.user.avatars}" > 
+        <img src="${avatars}" > 
         <!-- <i class="fab fa-earlybirds"></i> -->
-        <span>${tweetObj.user.name}</span>     
+        <span>${name}</span>     
       </div>
       <div>
-        <span>${tweetObj.user.handle}</span>
+        <span>${handle}</span>
       </div>
     </header>
     
         <div class="content">
-          <p>${escape(tweetObj.content.text)}</p>
+          <p>${escape(text)}</p>
         </div>
   
      <footer>
         <div>
-          <span>${timeago.format(tweetObj.created_at)}</span>
+          <span>${timeago.format(created_at)}</span>
         </div>
         <div>
           <i class="fas fa-flag icon"></i>
