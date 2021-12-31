@@ -1,17 +1,21 @@
+$red: #ce4648;
+$white-font: #ffffff;
+$blue: #b5c3cb;
+$logo-font: Bungee, sans-serif;
 .navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 120px;
   width: 100%;
-  background-color: #b5c3cb;
-  color: #ffffff;
+  background-color: $blue;
+  color: $white-font;
   padding: 0 1.5em;
   position: fixed;
   top: 0;
-}
-.navbar-top span {
-  font-family: Bungee, sans-serif;
+  span {
+    font-family: $logo-font;
+  }
 }
 
 .navbar-top-right {
@@ -19,22 +23,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.navbar-top-right i {
-  color: #ce4648;
-}
-.navbar-top-right .nav-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  color: #ffffff;
-}
-.navbar-top-right :hover {
-  cursor: pointer;
-  transform: scale(1.05);
+  i {
+    color: $red;
+  }
+  .nav-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: $white-font;
+  }
+  :hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
 
 .animate {

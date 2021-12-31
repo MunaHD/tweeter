@@ -1,3 +1,9 @@
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
 .under-navbar {
   height: 400px;
   width: 100%;
@@ -8,12 +14,8 @@
 .image {
   background-image: url(../images/rough-cloth.png);
 }
-
 .inside-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
+  @include center;
 }
 
 .header-avatar {

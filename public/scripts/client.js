@@ -131,7 +131,7 @@ $(() => {
   
   // navbar button when presed will toggle the form open and closed\
   // and focus on the textarea so user can write
-  $(".nav-button").click(() => {
+  $(".navbar-top-right").click(() => {
     $(".new-tweet").slideToggle("slow")
     $(".new-tweet textarea").focus();
     });

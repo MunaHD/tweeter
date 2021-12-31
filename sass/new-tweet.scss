@@ -1,29 +1,37 @@
+$red: #d26466;
+$font-white: #ffffff;
+$err-text: #6c6c6c;
+$err-backgound: #d2646633;
+$err-border: d264666e;
+$font-family: Bungee, sans-serif;
+$tweet-color: #545149;
+
 .new-tweet {
   display: none;
 }
 
 .err {
   display: none;
-  color: #6c6c6c;
+  color: $err-text;
   text-align: center;
   margin-top: 10px;
   height: 39px;
-  background-color: #d2646633;
-  border: 2px solid d264666e;
+  background-color: $err-backgound;
+  border: 2px solid $err-border;
   border-radius: 4px;
 }
 
 .form-div {
   display: flex;
   justify-content: space-between;
-  font-family: Bungee, sans-serif;
+  font-family: $font-family;
 }
 
 #tweet-text {
   background: transparent;
   width: 100%;
   border: none;
-  border-bottom: 4px solid #545149;
+  border-bottom: 4px solid $tweet-color;
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 20px;
@@ -31,7 +39,7 @@
   height: 40px;
   overflow: none;
   resize: none;
-  color: #545149;
+  color: $tweet-color;
 }
 
 textarea:focus {
@@ -40,14 +48,14 @@ textarea:focus {
 
 .blue-button {
   background-color: #4056a1;
-  color: #ffffff;
+  color: $font-white;
   border: none;
   padding: 3px;
   font-size: 90%;
 }
 
 .tweets {
-  border: 3px solid #545149;
+  border: 3px solid $tweet-color;
   margin-top: 30px;
   width: 100%;
   padding: 20px;
@@ -65,7 +73,7 @@ textarea:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #545149;
+  color: $tweet-color;
   margin-bottom: 70px;
 }
 
@@ -75,17 +83,17 @@ textarea:focus {
   justify-content: space-between;
   margin-top: 15px;
   font-size: 0.6em;
-  color: #545149;
+  color: $tweet-color;
 }
 
 .tweets .content {
   width: 90%;
-  border-bottom: 2px solid #545149;
+  border-bottom: 2px solid $tweet-color;
   font-weight: bold;
 }
 
 .tooLong {
-  color: #d26466;
+  color: $red;
 }
 
 .scroll-btn {
@@ -98,13 +106,13 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: $font-white;
   position: fixed;
   bottom: 10px;
 }
 
 .circle {
-  background: #d26466;
+  background: $red;
   border-radius: 50%;
   width: 50px;
   height: 50px;
