@@ -3,7 +3,7 @@
 Tweeter is a simple, single-page Twitter clone.
 
 
-This app I dependent on HTML, CSS, JS, jQuery and AJAX  for the front-end and Node, Express for the back-end.
+This app is dependent on HTML, CSS, JS, jQuery and AJAX  for the front-end and Node, Express for the back-end.
 
 ## Features
 - Write a new tweet that will be added to the feed in real time.
